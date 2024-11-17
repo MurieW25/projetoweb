@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    <title>Projeto HTML</title>
+    <link rel="stylesheet" href="styles/formats.css">
+</head>
+
+<body style="background-color: rgb(56, 66, 41);">
+    <header class="cabecalho">
+        <div class="placar">
+            <div class="font_placar">
+                <p id="p_isHold"></p>
+            </div>
+
+            <div class="font_placar">
+                <p>JOGADOR</p>
+            </div>
+
+            <div class="font_placar">
+                <p id="placar_p">0</p>
+            </div>
+
+            <div class="font_placar">
+                <p> X </p>
+            </div>
+
+            <div class="font_placar">
+                <p id="placar_b"> 0 </p>
+            </div>
+
+            <div class="font_placar">
+                <p>BOT</p>
+            </div>
+
+            <div class="font_placar">
+                <p id="b_isHold"></p>
+            </div>
+        </div>
+            
+    </header>
+
+    <main class="corpo">
+
+        <div class="mesa" id="mesa">
+
+
+            <div class="c_bot">
+                <div id="b_c_0"> </div>
+
+                <div id="b_c_1"> </div>
+
+                <div id="b_c_2"> </div>
+
+                <div id="b_c_3"> </div>
+
+                <div id="b_c_4"> </div>
+            </div>
+
+
+
+            <div class="botoes">
+                <button class="btnhold" id="btnHold"><b>HOLD</b></button>
+                <button class="btndraw" id="btnDraw"><b>DRAW</b></button>
+            </div>
+
+
+            <div class="c_plyr">
+                <div id="p_c_0"> </div>
+
+                <div id="p_c_1"> </div>
+
+                <div id="p_c_2"> </div>
+
+                <div id="p_c_3"> </div>
+
+                <div id="p_c_4"> </div>
+                    
+            </div>
+
+        </div>
+    </main>
+
+    <div id="overlay"></div>
+    <div id="telaFim">
+        <h2 id="resultado"> </h2>
+        <p id="msgm_res"> </p>
+        <button id="btnRestart">Reiniciar</button>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
